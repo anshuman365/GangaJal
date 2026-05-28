@@ -7,8 +7,8 @@ export default function ContactView() {
     name: '',
     phone: '',
     email: '',
-    city: 'Varanasi Division / वाराणसी कैंट',
-    role: 'Retailer / दुकानदार (Railway station / Transit)',
+    city: 'Varanasi Division / वाराणसी कैंट',   // full text as expected by Google Form
+    role: 'Retailer / दुकानदार (Railway station / Transit)', // full text
     message: ''
   });
 
@@ -21,7 +21,7 @@ export default function ContactView() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleFormSubmit = async (e: FormEvent) => {
+  const handleFormSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.phone) {
       alert('कृपया नाम और फ़ोन नंबर दर्ज करें! Please fill in your name and phone number.');
@@ -30,37 +30,63 @@ export default function ContactView() {
 
     setIsSubmitting(true);
 
+    // Google Form action URL (do not change)
     const formAction = 'https://docs.google.com/forms/d/e/1FAIpQLSdCV0oyuxAoWbUJxC6YkABX7hb8CUC_MS1OJNVB9M70KvzYEw/formResponse';
 
-    const formBody = new URLSearchParams({
+    // Required hidden fields from the original Google Form
+    const hiddenFields = {
+      'fvv': '1',
+      'partialResponse': '[null,null,"6739501341191842784"]',
+      'pageHistory': '0',
+      'fbzx': '6739501341191842784'
+    };
+
+    // Create hidden iframe and form (no page reload)
+    const iframe = document.createElement('iframe');
+    iframe.name = 'googleFormFrame';
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
+
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = formAction;
+    form.target = 'googleFormFrame';
+    form.style.display = 'none';
+    document.body.appendChild(form);
+
+    // Map our form fields to Google Form entry IDs
+    const fields = {
       'entry.475492728': formData.name,
       'entry.1424180630': formData.phone,
       'entry.1021775958': formData.email,
       'entry.1999490360': formData.role,
       'entry.499980485': formData.city,
       'entry.1489958251': formData.message,
-      'fvv': '1',
-      'partialResponse': '[null,null,"6739501341191842784"]',
-      'pageHistory': '0',
-      'fbzx': '6739501341191842784',
+      ...hiddenFields,
       'submissionTimestamp': Date.now().toString()
-    }).toString();
+    };
 
-    try {
-      await fetch(formAction, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: formBody,
-      });
-      setIsSubmitted(true);
-      setTicketId(`GJ-${Math.floor(100000 + Math.random() * 900000)}`);
-    } catch (error) {
-      console.error('Submission error:', error);
-      alert('Network error. Please check your connection and try again.');
-    } finally {
-      setIsSubmitting(false);
+    for (const [name, value] of Object.entries(fields)) {
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = name;
+      input.value = value;
+      form.appendChild(input);
     }
+
+    // Submit the form to the hidden iframe
+    form.submit();
+
+    // Clean up after submission (remove iframe and form)
+    setTimeout(() => {
+      if (document.body.contains(form)) document.body.removeChild(form);
+      if (document.body.contains(iframe)) document.body.removeChild(iframe);
+    }, 1000);
+
+    // Show success message and generate ticket ID
+    setIsSubmitted(true);
+    setTicketId(`GJ-${Math.floor(100000 + Math.random() * 900000)}`);
+    setIsSubmitting(false);
   };
 
   return (
@@ -81,10 +107,10 @@ export default function ContactView() {
           </p>
         </div>
 
-        {/* Two-column layout */}
+        {/* Two-Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start max-w-6xl mx-auto">
           
-          {/* Left: Form */}
+          {/* Left Column: Form */}
           <div className="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-10 border border-slate-100 shadow-sm">
             <AnimatePresence mode="wait">
               {!isSubmitted ? (
@@ -253,7 +279,7 @@ export default function ContactView() {
             </AnimatePresence>
           </div>
 
-          {/* Right: Contact details (unchanged) */}
+          {/* Right Column: Contact details (unchanged) */}
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-slate-900 text-white rounded-3xl p-6 sm:p-8 space-y-6 shadow-md border border-slate-800">
               <h3 className="text-base font-bold font-heading border-b border-slate-800 pb-3 uppercase tracking-wider text-sky-400">
