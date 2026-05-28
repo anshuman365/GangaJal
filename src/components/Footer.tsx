@@ -147,8 +147,8 @@ export default function Footer({ onNavigate }: FooterProps) {
               </li>
               <li className="flex items-center space-x-3 text-slate-400">
                 <Mail className="h-5 w-5 text-sky-400 shrink-0" />
-                <a href="mailto: altivonholdings@gmail.com" className="hover:text-sky-400 transition-colors">
-                  info@gangajalbottle.com
+                <a href="mailto:altivonholdings@gmail.com" className="hover:text-sky-400 transition-colors">
+                  altivonholdings@gmail.com
                 </a>
               </li>
             </ul>

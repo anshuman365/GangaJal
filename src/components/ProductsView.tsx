@@ -368,7 +368,7 @@ export default function ProductsView({ onNavigate, selectedProductId }: Products
               </p>
               
               <div className="text-lg font-extrabold text-white font-sans">
-                +91 98765 43210
+                +91 63937 41885
               </div>
 
               <a 

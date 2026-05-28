@@ -268,8 +268,8 @@ export default function ContactView() {
                   <Phone className="h-5 w-5 text-amber-500 mt-1 shrink-0" />
                   <div>
                     <span className="block text-[10px] uppercase text-slate-400">Phone Support / कॉल करें</span>
-                    <a href="tel:+919876543210" className="block text-base font-bold hover:text-sky-400 transition-colors">
-                      +91 98765 43210
+                    <a href="tel:+91 63937 41885" className="block text-base font-bold hover:text-sky-400 transition-colors">
+                      +91 63937 41885
                     </a>
                   </div>
                 </li>
@@ -293,8 +293,8 @@ export default function ContactView() {
                   <Mail className="h-5 w-5 text-sky-400 mt-1 shrink-0" />
                   <div>
                     <span className="block text-[10px] uppercase text-slate-400">Email Address / ईमेल</span>
-                    <a href="mailto: altivonholdings@gmail.com" className="block text-sm font-semibold hover:text-sky-400 transition-colors">
-                      info@gangajalbottle.com
+                    <a href="mailto:altivonholdings@gmail.com" className="block text-sm font-semibold hover:text-sky-400 transition-colors">
+                      altivonholdings@gmail.com
                     </a>
                   </div>
                 </li>
