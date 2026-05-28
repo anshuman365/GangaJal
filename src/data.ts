@@ -1,11 +1,18 @@
 import { Product, Stat, TimelineStep, Testimonial } from './types';
 
-export const BRAND_LOGO = "/src/assets/images/ganga_jal_logo_1779934206091.png";
-export const HERO_IMAGE = "/src/assets/images/ganga_jal_hero_1779934226100.png";
-export const PLANT_IMAGE = "/src/assets/images/ganga_jal_plant_1779934246156.png";
-export const PACK_6_IMAGE = "/src/assets/images/ganga_jal_6pack_1779934267139.png";
-export const LAB_IMAGE = "/src/assets/images/ganga_jal_lab_1779934290342.png";
-export const FOUNDER_IMAGE = "/src/assets/images/ganga_jal_founder_1779934310023.png";
+import brandLogo from './assets/images/ganga_jal_logo_1779934206091.png';
+import heroImage from './assets/images/ganga_jal_hero_1779934226100.png';
+import plantImage from './assets/images/ganga_jal_plant_1779934246156.png';
+import pack6Image from './assets/images/ganga_jal_6pack_1779934267139.png';
+import labImage from './assets/images/ganga_jal_lab_1779934290342.png';
+import founderImage from './assets/images/ganga_jal_founder_1779934310023.png';
+
+export const BRAND_LOGO = brandLogo;
+export const HERO_IMAGE = heroImage;
+export const PLANT_IMAGE = plantImage;
+export const PACK_6_IMAGE = pack6Image;
+export const LAB_IMAGE = labImage;
+export const FOUNDER_IMAGE = founderImage;
 
 export const PRODUCTS: Product[] = [
   {
