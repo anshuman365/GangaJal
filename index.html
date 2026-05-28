@@ -2,12 +2,116 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f172a" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Ganga Jal (गंगा जल) – Pure Mineral Water at ₹15 | RO+UV+Ozone Treated</title>
+    <meta name="title" content="Ganga Jal – Pure, Affordable RO+UV+Ozone Mineral Water at ₹15" />
+    <meta name="description" content="Ganga Jal (गंगा जल) provides safe, mineral-enriched packaged drinking water at just ₹15 MRP. Trusted by retailers and travelers across Varanasi, Prayagraj, Kanpur. FSSAI licensed." />
+    <meta name="keywords" content="Ganga Jal, packaged drinking water, mineral water, RO water, UV treated, ozone treated, bottled water, ₹15 water, Varanasi, Prayagraj, Kanpur, railway station water, wholesale water" />
+    <meta name="author" content="Ganga Jal Minerals" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English, Hindi" />
+    <link rel="canonical" href="https://gangajalwater.onrender.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gangajalwater.onrender.com/" />
+    <meta property="og:title" content="Ganga Jal (गंगा जल) – Pure Mineral Water at ₹15" />
+    <meta property="og:description" content="RO+UV+Ozone treated mineral drinking water. Safe, affordable, and trusted by thousands of travelers and retailers in Uttar Pradesh." />
+    <meta property="og:image" content="https://gangajalwater.onrender.com/src/assets/images/ganga_jal_hero_1779934226100.png" />
+    <meta property="og:image:alt" content="Ganga Jal packaged drinking water bottle" />
+    <meta property="og:site_name" content="Ganga Jal" />
+    <meta property="og:locale" content="en_IN" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://gangajalwater.onrender.com/" />
+    <meta name="twitter:title" content="Ganga Jal – Pure Mineral Water at ₹15" />
+    <meta name="twitter:description" content="Safe, RO+UV+Ozone treated bottled water for travelers. Available at Varanasi, Prayagraj, Kanpur stations. Wholesale supply available." />
+    <meta name="twitter:image" content="https://gangajalwater.onrender.com/src/assets/images/ganga_jal_hero_1779934226100.png" />
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    
+    <!-- Favicon and Icons (placeholder – replace with actual favicon if available) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <!-- Structured Data (Organization + LocalBusiness) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Ganga Jal Minerals",
+      "url": "https://gangajalwater.onrender.com",
+      "logo": "https://gangajalwater.onrender.com/src/assets/images/ganga_jal_logo_1779934206091.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-63937-41885",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Hindi"]
+      },
+      "sameAs": [
+        "https://wa.me/916393741885",
+        "https://www.instagram.com/gangajal/",
+        "https://www.facebook.com/gangajal"
+      ],
+      "areaServed": ["Varanasi", "Prayagraj", "Kanpur", "Uttar Pradesh"]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Ganga Jal 1 Litre Bottle",
+      "image": "https://gangajalwater.onrender.com/src/assets/images/ganga_jal_hero_1779934226100.png",
+      "description": "RO+UV+Ozone treated mineral drinking water in premium PET bottle.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Ganga Jal"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "15",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+    
+    <!-- Google Analytics (optional – replace with your own GA ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4X0M6RM0F6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4X0M6RM0F6');
+    </script>
+    
+    <!-- Base CSS / Fallback -->
+    <style>
+      /* simple fallback in case React CSS loads late */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background-color: #f8fafc;
+      }
+      #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
