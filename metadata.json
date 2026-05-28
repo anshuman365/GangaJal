@@ -1,0 +1,6 @@
+{
+  "name": "Ganga Jal",
+  "description": "Ganga Jal (गंगा जल) provides pure, RO+UV+Ozone treated mineral-added drinking water at an affordable price of just ₹15 to travelers and retailers in Uttar Pradesh, India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
