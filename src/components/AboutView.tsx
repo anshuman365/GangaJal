@@ -123,7 +123,7 @@ export default function AboutView() {
               <div className="border-t border-slate-100 pt-6">
                 <cite className="not-italic">
                   <span className="block text-slate-800 font-extrabold text-base font-heading">
-                    Sarvar Singh
+                    Anshuman Singh
                   </span>
                   <span className="block text-sky-600 text-xs font-semibold tracking-wider uppercase mt-1">
                     Founder, Ganga Jal Minerals
