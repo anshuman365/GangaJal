@@ -132,7 +132,7 @@ export default function App() {
 
       {/* 4. Floating Direct WhatsApp Hotkey */}
       <a
-        href="https://wa.me/9163937 41885?text=Hello!%20I'm%20visiting%20the%20Ganga%20Jal%20website%20and%20want%20to%20know%20more%20about%20your%20water%20supply."
+        href="https://wa.me/916393741885?text=Hello!%20I'm%20visiting%20the%20Ganga%20Jal%20website%20and%20want%20to%20know%20more%20about%20your%20water%20supply."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contact Ganga Jal on WhatsApp"
