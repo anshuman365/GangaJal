@@ -230,13 +230,13 @@ export default function DistributionView() {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
               <a 
-                href="tel:+919876543210"
+                href="tel:+916393741885"
                 className="w-full sm:w-auto bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-xl shadow-xs transition-transform hover:-translate-y-0.5 block text-xs"
               >
-                Call Onboarding Office: +91 98765 43210
+                Call Onboarding Office: +91 63937 41885
               </a>
               <a 
-                href="https://wa.me/919876543210?text=Hello%20Ganga%20Jal%2520Team!%20I%20want%2520to%20register%2520my%20shop%20in%2520Kanpur%2520/%20Varanasi%20/%2520Prayagraj."
+                href="https://wa.me/916393741885?text=Hello%20Ganga%20Jal%2520Team!%20I%20want%2520to%20register%2520my%20shop%20in%2520Kanpur%2520/%20Varanasi%20/%2520Prayagraj."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-xl shadow-xs transition-transform hover:-translate-y-0.5 block text-xs"

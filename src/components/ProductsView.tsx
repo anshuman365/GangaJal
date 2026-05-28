@@ -372,7 +372,7 @@ export default function ProductsView({ onNavigate, selectedProductId }: Products
               </div>
 
               <a 
-                href="https://wa.me/919876543210?text=Hello!%20Interested%20in%20custom%20labeling%20Ganga%20Jal%20bottles."
+                href="https://wa.me/916393741885?text=Hello!%20Interested%20in%20custom%20labeling%20Ganga%20Jal%20bottles."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3 px-4 rounded-xl flex items-center justify-center space-x-2 text-xs transition-colors"

@@ -279,7 +279,7 @@ export default function ContactView() {
                   <div>
                     <span className="block text-[10px] uppercase text-slate-400">WhatsApp Enquiry / व्हाट्सएप</span>
                     <a 
-                      href="https://wa.me/919876543210?text=Hello%20Ganga%20Jal%20Team!%20Interested%20in%20high-margin%20retail%20supplies." 
+                      href="https://wa.me/916393741885?text=Hello%20Ganga%20Jal%20Team!%20Interested%20in%20high-margin%20retail%20supplies." 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="block text-base font-bold text-emerald-400 hover:underline hover:text-emerald-300 transition-colors"
@@ -293,7 +293,7 @@ export default function ContactView() {
                   <Mail className="h-5 w-5 text-sky-400 mt-1 shrink-0" />
                   <div>
                     <span className="block text-[10px] uppercase text-slate-400">Email Address / ईमेल</span>
-                    <a href="mailto:info@gangajalbottle.com" className="block text-sm font-semibold hover:text-sky-400 transition-colors">
+                    <a href="mailto: altivonholdings@gmail.com" className="block text-sm font-semibold hover:text-sky-400 transition-colors">
                       info@gangajalbottle.com
                     </a>
                   </div>

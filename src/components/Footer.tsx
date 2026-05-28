@@ -141,13 +141,13 @@ export default function Footer({ onNavigate }: FooterProps) {
               </li>
               <li className="flex items-center space-x-3 text-slate-400">
                 <Phone className="h-5 w-5 text-sky-400 shrink-0" />
-                <a href="tel:+919876543210" className="hover:text-sky-400 transition-colors">
-                  +91-98765 43210
+                <a href="tel:+916393741885" className="hover:text-sky-400 transition-colors">
+                  +91-63937 41885
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-slate-400">
                 <Mail className="h-5 w-5 text-sky-400 shrink-0" />
-                <a href="mailto:info@gangajalbottle.com" className="hover:text-sky-400 transition-colors">
+                <a href="mailto: altivonholdings@gmail.com" className="hover:text-sky-400 transition-colors">
                   info@gangajalbottle.com
                 </a>
               </li>
@@ -167,7 +167,7 @@ export default function Footer({ onNavigate }: FooterProps) {
           
           {/* WhatsApp Direct link */}
           <a 
-            href="https://wa.me/919876543210?text=Hello%20Ganga%20Jal%20Team!%20I%20am%20interested%20in%20bulk%20water%20supply." 
+            href="https://wa.me/916393741885?text=Hello%20Ganga%20Jal%20Team!%20I%20am%20interested%20in%20bulk%20water%20supply." 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-full shadow-md hover:shadow-lg transition-transform hover:-translate-y-0.5"
